@@ -21,11 +21,11 @@ class User {
       list.add(
         User(
           id: usr['id'],
-          email: usr['email'],
-          firstName: usr['firstName'],
-          lastName: usr['lastName'],
-          role: usr['role'],
-          avatar: usr['avatar'],
+          email: usr['email'] ?? '',
+          firstName: usr['first_name'] ?? '',
+          lastName: usr['last_name'] ?? '',
+          role: usr['role'] ?? '',
+          avatar: usr['avatar'] ?? '',
         ),
       );
     }
